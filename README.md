@@ -5,6 +5,8 @@ This is a workshop for building forms using:
 - [React Hook Form](https://react-hook-form.com/)
 - [Zod](https://zod.dev)
 
+This is a preview to my course on shadcn/ui: [Feel free to check it out!](https://newline.co/courses/building-sleek-web-applications-with-shadcn-ui)
+
 ## Usage
 
 ```bash
@@ -26,3 +28,5 @@ The workshop includes:
 - Submitting the form
 - Adding `Toast` indicator after submit
 - Rendering a `Table` with created events
+
+If you have any questions, you can always reach out to me on [Twitter](https://twitter.com/cohen_eyal4).
