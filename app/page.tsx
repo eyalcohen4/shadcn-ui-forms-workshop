@@ -1,10 +1,17 @@
-"use client";
+"use client"
 
-import { useState } from "react";
-import { format } from "date-fns";
+import { useState } from "react"
+import { format } from "date-fns"
 
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Toaster } from "@/components/ui/toaster";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table"
+import { Toaster } from "@/components/ui/toaster"
 import { CreateEvent, EventParams } from "@/components/create-event"
 
 export default function IndexPage() {
@@ -21,15 +28,11 @@ export default function IndexPage() {
       <div className="w-full">
         <Table>
           <TableHeader className="border-b bg-slate-800">
-            <TableHead>
-              Title
-            </TableHead>
-            <TableHead>
-              Location
-            </TableHead>
-            <TableHead>
-              Date
-            </TableHead>
+            <TableRow>
+              <TableHead>Title</TableHead>
+              <TableHead>Location</TableHead>
+              <TableHead>Date</TableHead>
+            </TableRow>
           </TableHeader>
           <TableBody>
             {events.map((event) => (
@@ -37,12 +40,8 @@ export default function IndexPage() {
                 <TableCell className="font-bold capitalize">
                   {event.title}
                 </TableCell>
-                <TableCell>
-                  {event.location}
-                </TableCell>
-                <TableCell>
-                  {format(event.date, "PPP")}
-                </TableCell>
+                <TableCell>{event.location}</TableCell>
+                <TableCell>{format(event.date, "PPP")}</TableCell>
               </TableRow>
             ))}
           </TableBody>

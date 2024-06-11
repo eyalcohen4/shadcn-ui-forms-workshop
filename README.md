@@ -1,22 +1,28 @@
-# next-template
+# shadcn/ui Forms Workshop
 
-A Next.js 13 template for building apps with Radix UI and Tailwind CSS.
+This is a workshop for building forms using:
+- [shadcn/ui](https://ui.shadcn.com/)
+- [React Hook Form](https://react-hook-form.com/)
+- [Zod](https://zod.dev)
 
 ## Usage
 
 ```bash
-npx create-next-app -e https://github.com/shadcn/next-template
+npm install
 ```
 
-## Features
+```bash
+npm run dev
+```
 
-- Next.js 13 App Directory
-- Radix UI Primitives
-- Tailwind CSS
-- Icons from [Lucide](https://lucide.dev)
-- Dark mode with `next-themes`
-- Tailwind CSS class sorting, merging and linting.
 
-## License
+The workshop includes:
 
-Licensed under the [MIT license](https://github.com/shadcn/ui/blob/main/LICENSE.md).
+- Creating a Form
+- Using `Zod` for validation
+- Using `React Hook Form` for form management
+- Adding shadcn/ui `Form` and `FormField`components
+- Adding a `DatePicker` Field
+- Submitting the form
+- Adding `Toast` indicator after submit
+- Rendering a `Table` with created events
